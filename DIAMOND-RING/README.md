@@ -33,7 +33,7 @@ Particle animation with gravity · outline detection · character-based shading
 ## Source Code
 
 The full runnable Python source is available for $5.99.
-It is not included in this repository. The video tools used for the Instagram reel are not part of it.
+It is not included in this repository.
 
 -> [Get the source code (JIN2 Code Shop)](https://payhip.com/b/4vXRc)
 
