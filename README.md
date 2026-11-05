@@ -10,6 +10,7 @@ what each piece is, why it was made, and which techniques shaped it.
 
 | | Work | Year | Source code |
 |---|---|---|---|
+| ![](ROSE/images/03_bloom.png) | [IN BLOOM — Rose](ROSE/) | 2026 | available in the shop ($3.99) |
 | ![](DIAMOND-RING/images/02_finished.png) | [WILL YOU — Diamond Ring](DIAMOND-RING/) | 2026 | available in the shop ($5.99) |
 
 More works will be added over time, including small standalone pieces released as free, open code.
