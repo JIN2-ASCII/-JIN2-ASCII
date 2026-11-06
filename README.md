@@ -10,7 +10,7 @@ what each piece is, why it was made, and which techniques shaped it.
 
 | | Work | Year | Source code |
 |---|---|---|---|
-| ![](BIRTHDAY-CAKE/images/03_happy_birthday.png) | [HAPPY BIRTHDAY — Birthday Cake](BIRTHDAY-CAKE/) | 2026 | available in the shop ($2.99) |
+| ![](BIRTHDAY-CAKE/images/03_happy_birthday.png) | [HAPPY BIRTHDAY — Birthday Cake](BIRTHDAY-CAKE/) | 2026 | free, in this repository |
 | ![](ROSE/images/03_bloom.png) | [IN BLOOM — Rose](ROSE/) | 2026 | available in the shop ($3.99) |
 | ![](DIAMOND-RING/images/02_finished.png) | [WILL YOU — Diamond Ring](DIAMOND-RING/) | 2026 | available in the shop ($5.99) |
 

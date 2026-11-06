@@ -32,10 +32,15 @@ Diffuse and specular lighting · local point light with falloff · outline detec
 
 ## Source Code
 
-The full runnable Python source is available for $2.99.
-It is not included in this repository.
+The full Python source is free and included in this folder.
 
--> [Get the source code (JIN2 Code Shop)](https://payhip.com/b/FQjet)
+```
+pip install -r requirements.txt
+python birthday_cake.py
+```
+
+Space pause, R restart, S screenshot, Esc quit.
+Free for personal projects. Please credit @jin_22ee if you share what you make. See LICENSE.txt.
 
 ---
 
