@@ -1,6 +1,6 @@
 # HAPPY BIRTHDAY
 
-Birthday Cake · ASCII Code Art — JIN2, 2026
+Birthday Cake · ASCII Code Art by JIN2, 2026
 
 ![HAPPY BIRTHDAY](images/preview.gif)
 
@@ -19,11 +19,11 @@ Python · NumPy · pygame-ce · Pillow
 
 ## Creative Process
 
-1. Form — the slice, its sponge and cream layers, frosting, candle, sprinkles and plate are built in 3D.
-2. Build — the cake appears from the plate upward, with a few letters flying in.
-3. Candlelight — the flame is lit, and a warm light reaches only the part of the cake close to it.
-4. Celebration — confetti falls and the two words pop in above the cake.
-5. ASCII Rendering — the scene becomes a grid of characters, each material with its own letters.
+1. Form: the slice, its sponge and cream layers, frosting, candle, sprinkles and plate are built in 3D.
+2. Build: the cake appears from the plate upward, with a few letters flying in.
+3. Candlelight: the flame is lit, and a warm light reaches only the part of the cake close to it.
+4. Celebration: confetti falls and the two words pop in above the cake.
+5. ASCII Rendering: the scene becomes a grid of characters, each material with its own letters.
 
 ## Technical Concepts
 
