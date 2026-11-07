@@ -1,13 +1,13 @@
 # WILL YOU
 
-Diamond Ring · ASCII Code Art — JIN2, 2026
+Diamond Ring · ASCII Code Art by JIN2, 2026
 
 ![WILL YOU](images/preview.gif)
 
 ## Artist's Note
 
 A diamond ring emerges from light, gradually taking shape through characters and motion.
-A small object that carries a very large question — drawn only with letters, numbers and symbols.
+A small object that carries a very large question, drawn only with letters, numbers and symbols.
 
 | forming | finished | turning |
 |---|---|---|
@@ -19,11 +19,11 @@ Python · NumPy · pygame-ce
 
 ## Creative Process
 
-1. Form — the band, prongs and a faceted diamond are built in 3D.
-2. Motion — the ring is drawn in by a travelling point of light, then turns slowly.
-3. Lighting — a fixed light and a moving light make the metal shine and the facets sparkle.
-4. Particles — golden sparks, a ring of light, orbits and dust move around it.
-5. ASCII Rendering — the scene becomes a grid of characters, shaded by brightness.
+1. Form: the band, prongs and a faceted diamond are built in 3D.
+2. Motion: the ring is drawn in by a travelling point of light, then turns slowly.
+3. Lighting: a fixed light and a moving light make the metal shine and the facets sparkle.
+4. Particles: golden sparks, a ring of light, orbits and dust move around it.
+5. ASCII Rendering: the scene becomes a grid of characters, shaded by brightness.
 
 ## Technical Concepts
 

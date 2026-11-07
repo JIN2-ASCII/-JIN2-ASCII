@@ -1,4 +1,4 @@
-# JIN2 — ASCII Code Art
+# JIN2 · ASCII Code Art
 
 JIN2 is a creative coding artist who writes artworks in Python.
 Every piece is drawn only with letters, numbers and symbols.
@@ -10,20 +10,20 @@ what each piece is, why it was made, and which techniques shaped it.
 
 | | Work | Year | Source code |
 |---|---|---|---|
-| ![](BIRTHDAY-CAKE/images/03_happy_birthday.png) | [HAPPY BIRTHDAY — Birthday Cake](BIRTHDAY-CAKE/) | 2026 | free, in this repository |
-| ![](ROSE/images/03_bloom.png) | [IN BLOOM — Rose](ROSE/) | 2026 | free, in this repository |
-| ![](DIAMOND-RING/images/02_finished.png) | [WILL YOU — Diamond Ring](DIAMOND-RING/) | 2026 | free, in this repository |
+| ![](BIRTHDAY-CAKE/images/03_happy_birthday.png) | [HAPPY BIRTHDAY (Birthday Cake)](BIRTHDAY-CAKE/) | 2026 | free, in this repository |
+| ![](ROSE/images/03_bloom.png) | [IN BLOOM (Rose)](ROSE/) | 2026 | free, in this repository |
+| ![](DIAMOND-RING/images/02_finished.png) | [WILL YOU (Diamond Ring)](DIAMOND-RING/) | 2026 | free, in this repository |
 
 More works will be added over time, including small standalone pieces released as free, open code.
 
 ## Technology
 
-Python · NumPy · pygame-ce · Pillow — written from scratch, no 3D software or image assets.
+Python · NumPy · pygame-ce · Pillow. Written from scratch, no 3D software or image assets.
 
 ## Links
 
-- Instagram — [@jin_22ee](https://instagram.com/jin_22ee)
-- Code shop — [payhip.com/JIN2](https://payhip.com/JIN2)
+- Instagram: [@jin_22ee](https://instagram.com/jin_22ee)
+- Code shop: [payhip.com/JIN2](https://payhip.com/JIN2)
 
 ---
 

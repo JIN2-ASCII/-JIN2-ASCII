@@ -1,13 +1,13 @@
 # IN BLOOM
 
-Rose · ASCII Code Art — JIN2, 2026
+Rose · ASCII Code Art by JIN2, 2026
 
 ![IN BLOOM](images/preview.gif)
 
 ## Artist's Note
 
 A single line of light grows into a stem, a bud forms, and slowly, petal by petal, it opens.
-A rose that is never cut and never fades — drawn only with letters, numbers and symbols.
+A rose that is never cut and never fades, drawn only with letters, numbers and symbols.
 
 | growing | bud | in bloom |
 |---|---|---|
@@ -19,11 +19,11 @@ Python · NumPy · pygame-ce
 
 ## Creative Process
 
-1. Form — the stem, leaves, sepals and a closed bud are built in 3D.
-2. Growth — a travelling point of light draws the stem up, then the bud fills in.
-3. Bloom — one spiral surface loosens from the bud into a full rose, outer petals first.
-4. Motion — a gentle sway, petals trailing behind it, dewdrops that fall and splash.
-5. ASCII Rendering — the scene becomes a grid of characters, shaded by brightness.
+1. Form: the stem, leaves, sepals and a closed bud are built in 3D.
+2. Growth: a travelling point of light draws the stem up, then the bud fills in.
+3. Bloom: one spiral surface loosens from the bud into a full rose, outer petals first.
+4. Motion: a soft sway, petals trailing behind it, dewdrops that fall and splash.
+5. ASCII Rendering: the scene becomes a grid of characters, shaded by brightness.
 
 ## Technical Concepts
 

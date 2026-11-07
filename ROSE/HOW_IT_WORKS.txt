@@ -23,7 +23,7 @@ The whole artwork is one Python file. It works in six steps.
    - A key light from above and a rim light that slowly circles the rose.
    - Brightness = how much a surface faces the light plus a sharp highlight;
      the heart of the flower is a little darker, for depth.
-   - The rose sways gently; the lower outer petals trail behind the sway.
+   - The rose sways a little; the lower outer petals trail behind the sway.
    - Dewdrops sparkle on the petals, and a few of them swell, fall with
      gravity and splash on the floor.
    - Twinkling dust drifts around the flower.
