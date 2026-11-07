@@ -32,10 +32,15 @@ Particle animation with gravity · outline detection · character-based shading
 
 ## Source Code
 
-The full runnable Python source is available for $5.99.
-It is not included in this repository.
+The full Python source is free and included in this folder.
 
--> [Get the source code (JIN2 Code Shop)](https://payhip.com/b/4vXRc)
+```npip install -r requirements.txt
+python diamond_ring.py
+```n
+Space pause, R restart, S screenshot, Esc quit.
+Free for personal projects. Please credit @jin_22ee if you share what you make. See LICENSE.txt.
+
+If you'd like to support my work, the same code is also on [Payhip](https://payhip.com/b/4vXRc).
 
 ---
 
