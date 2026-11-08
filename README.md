@@ -10,6 +10,7 @@ what each piece is, why it was made, and which techniques shaped it.
 
 | | Work | Year | Source code |
 |---|---|---|---|
+| ![](CAT-KNIGHT/images/03_knight.png) | [CAT KNIGHT](CAT-KNIGHT/) | 2026 | full code, in this repository |
 | ![](MONEY-RAIN/images/02_rain.png) | [MONEY RAIN](MONEY-RAIN/) | 2026 | free, in this repository |
 | ![](BIRTHDAY-CAKE/images/03_happy_birthday.png) | [HAPPY BIRTHDAY (Birthday Cake)](BIRTHDAY-CAKE/) | 2026 | free, in this repository |
 | ![](ROSE/images/03_bloom.png) | [IN BLOOM (Rose)](ROSE/) | 2026 | free, in this repository |
