@@ -10,6 +10,7 @@ what each piece is, why it was made, and which techniques shaped it.
 
 | | Work | Year | Source code |
 |---|---|---|---|
+| ![](SNOWMAN/images/02_standing.png) | [DON'T MELT (Snowman)](SNOWMAN/) | 2026 | free, in this repository |
 | ![](NIGHT-TIDE/images/02_breaking.png) | [NIGHT TIDE](NIGHT-TIDE/) | 2026 | free, in this repository |
 | ![](BLACK-HOLE/images/03_flow.png) | [BLACK HOLE](BLACK-HOLE/) | 2026 | free, in this repository |
 | ![](CAT-KNIGHT/images/03_knight.png) | [CAT KNIGHT](CAT-KNIGHT/) | 2026 | full code, in this repository |
