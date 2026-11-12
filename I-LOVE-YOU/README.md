@@ -43,6 +43,8 @@ python i_love_you.py
 Space pause, R restart, S screenshot, Esc quit.
 Free for personal projects. Please credit @jin_22ee if you share what you make. See LICENSE.txt.
 
+If you'd like to support my work, the same code is also on [Payhip](https://payhip.com/b/SOw4m).
+
 ---
 
 Artist: JIN2 · Instagram [@jin_22ee](https://instagram.com/jin_22ee)
