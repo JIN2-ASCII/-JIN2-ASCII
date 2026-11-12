@@ -10,6 +10,7 @@ what each piece is, why it was made, and which techniques shaped it.
 
 | | Work | Year | Source code |
 |---|---|---|---|
+| ![](I-LOVE-YOU/images/03_front.png) | [I LOVE YOU](I-LOVE-YOU/) | 2026 | free, in this repository |
 | ![](SNOWMAN/images/02_standing.png) | [DON'T MELT (Snowman)](SNOWMAN/) | 2026 | free, in this repository |
 | ![](NIGHT-TIDE/images/02_breaking.png) | [NIGHT TIDE](NIGHT-TIDE/) | 2026 | free, in this repository |
 | ![](BLACK-HOLE/images/03_flow.png) | [BLACK HOLE](BLACK-HOLE/) | 2026 | free, in this repository |
