@@ -1,0 +1,45 @@
+HOW IT WORKS - Skipped a Beat
+JIN2 · @jin_22ee
+
+The body was drawn in letters from a picture that isn't mine,
+so the picture is not included. Here is how the 480 frames were made,
+and what skipped_a_beat.py does with them.
+
+How the frames were made
+1. Two layers
+   The picture was split into the blue body and the red heart, by how
+   much more red than blue each pixel has.
+
+2. The flinch
+   Every 1.6 seconds the body gets a hard kick: in 0.05 seconds it grows
+   by 6 percent and the shoulders jump up, then it shivers back down.
+   A smaller second beat follows 0.3 seconds later, like a heartbeat.
+   The screen shakes a few pixels while it happens.
+
+3. The heart
+   Around the heart the picture is pushed outwards, strongest in the
+   middle, so the heart swells out of the chest on every flinch.
+   A white spark in the heart flares up at the same moment.
+
+4. The shock wave
+   After each flinch a ring of light runs out from the heart along the
+   veins and fades on its way.
+
+5. From pixels to letters
+   Each frame was cut into a grid of 120 x 68 letter cells:
+   - brightness picks the letter, from -:;= (dark) to B8$#@ (bright),
+   - the letters flicker a little, like code that is running,
+   - the colour is deep blue, blue or pale blue for the body,
+     red or pink for the heart, white for the spark.
+   In the first second and a half the letters arrive from the heart outwards.
+
+What skipped_a_beat.py does
+6. Plays the frames
+   For each frame it draws the letters in their colour, lets the last
+   frame fade behind it and adds a soft glow. On every flinch the red
+   slips right and the blue slips left for a moment.
+
+Things you can try (for yourself)
+   TRAIL             how long the last frame stays behind
+   SPLIT             how far the colours pull apart
+   CW, CH, FONT_PX   letter size
