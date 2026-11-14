@@ -1,0 +1,48 @@
+HOW IT WORKS - Good Luck
+JIN2 · @jin_22ee
+
+The whole artwork is one Python file. A four-leaf clover is covered in
+rows of "Good luck" in 77 languages, and the letters alone make its shape.
+
+1. The phrases
+   Each phrase was drawn once as a picture, because scripts like Arabic,
+   Hindi or Thai need their letters joined and shaped correctly.
+   Right-to-left languages are typed in from the right.
+
+2. The shape
+   Each leaf is one heart: half a heart as a list of 48 points, mirrored,
+   with its tip in the middle of the clover. Four of them point out in
+   four directions, and a curved stem runs down from the middle.
+
+3. Rows of text
+   The clover is cut into rows. In each row, phrases are picked so they
+   fill the row from edge to edge, like justified text, and leftover
+   room gets one more, slightly smaller phrase. English and Korean come
+   up every fourth phrase. The front and the back get different phrases.
+
+4. Depth
+   Every leaf gets its own thickness: flat sides, a face that bulges
+   towards its middle and a slightly raised rim. The stem is a thinner
+   rod. The sides carry short phrases too.
+
+5. Turning and glass
+   The clover turns to the right around its middle, once every
+   10 seconds. Each row is drawn in half-pixel steps, far to near, so
+   the turned leaves have no holes. The colour is green glass: pale in
+   the middle, deep green at the thick edge, white where the surface
+   faces the light.
+
+6. Light and sparkles
+   Every 4 seconds a band of light runs across the glass, and small
+   green stars rise around the clover and twinkle.
+
+7. The start
+   In the first 3 seconds the phrases are typed in one by one.
+   Each frame fades into the next and a soft glow is added.
+
+Things you can try (for yourself)
+   LEAF, LEAF_W      size and width of the leaves
+   ANGLES            which way the leaves point
+   WALL, DOME        how thick and how puffy it is
+   TURN              seconds for one turn
+   PALE, DEEP        the glass colours
