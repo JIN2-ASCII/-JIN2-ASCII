@@ -10,6 +10,7 @@ what each piece is, why it was made, and which techniques shaped it.
 
 | | Work | Year | Source code |
 |---|---|---|---|
+| ![](GOOD-LUCK/images/03_front.png) | [GOOD LUCK (Four-Leaf Clover)](GOOD-LUCK/) | 2026 | free, in this repository |
 | ![](SKIPPED-A-BEAT/images/03_heart.png) | [SKIPPED A BEAT](SKIPPED-A-BEAT/) | 2026 | full code, in this repository |
 | ![](I-LOVE-YOU/images/03_front.png) | [I LOVE YOU](I-LOVE-YOU/) | 2026 | free, in this repository |
 | ![](SNOWMAN/images/02_standing.png) | [DON'T MELT (Snowman)](SNOWMAN/) | 2026 | free, in this repository |
@@ -21,11 +22,11 @@ what each piece is, why it was made, and which techniques shaped it.
 | ![](ROSE/images/03_bloom.png) | [IN BLOOM (Rose)](ROSE/) | 2026 | free, in this repository |
 | ![](DIAMOND-RING/images/02_finished.png) | [WILL YOU (Diamond Ring)](DIAMOND-RING/) | 2026 | free, in this repository |
 
-More works will be added over time, including small standalone pieces released as free, open code.
+New works are added over time.
 
 ## Technology
 
-Python · NumPy · pygame-ce · Pillow. Written from scratch, no 3D software or image assets.
+Python · NumPy · pygame-ce · Pillow · OpenCV. No 3D software.
 
 ## Links
 

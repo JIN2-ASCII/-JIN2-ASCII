@@ -7,7 +7,7 @@ Rose · ASCII Code Art by JIN2, 2026
 ## Artist's Note
 
 A single line of light grows into a stem, a bud forms, and slowly, petal by petal, it opens.
-A rose that is never cut and never fades, drawn only with letters, numbers and symbols.
+Drawn only with letters, numbers and symbols.
 
 | growing | bud | in bloom |
 |---|---|---|

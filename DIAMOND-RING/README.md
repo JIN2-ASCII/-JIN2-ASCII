@@ -6,8 +6,8 @@ Diamond Ring · ASCII Code Art by JIN2, 2026
 
 ## Artist's Note
 
-A diamond ring emerges from light, gradually taking shape through characters and motion.
-A small object that carries a very large question, drawn only with letters, numbers and symbols.
+A diamond ring appears out of light and takes shape letter by letter.
+Drawn only with letters, numbers and symbols.
 
 | forming | finished | turning |
 |---|---|---|

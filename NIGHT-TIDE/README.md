@@ -8,7 +8,7 @@ The sea at night · ASCII Code Art · JIN2, 2026
 
 Dark water at night, with only a little light moving on it.
 Waves roll in one after another, each with its own angle, size and strength, break into white foam and run up the sand.
-There is no moon in the sky. You only see it as glitter on the water.
+The moon itself is not drawn, only its glitter on the water.
 
 | rolling in | breaking | glitter |
 |---|---|---|

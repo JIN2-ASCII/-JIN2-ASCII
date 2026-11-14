@@ -8,7 +8,7 @@ Snowman · ASCII Code Art · JIN2, 2026
 
 It's winter, and listening to the song Snowman made me think of Wilson, my name for the Minecraft snowman.
 Then I wondered: what if Wilson melted?
-A little block snowman made of letters stands in the falling snow and melts piece by piece, smiling until the very end.
+A little block snowman made of letters stands in the falling snow and melts piece by piece, still smiling.
 
 | gathering | standing | melting |
 |---|---|---|
