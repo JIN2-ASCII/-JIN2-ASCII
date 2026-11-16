@@ -1,5 +1,5 @@
 # I LOVE YOU
-# JIN2 · @jin_22ee · 2026    Free to use for personal projects, see LICENSE.txt.
+# JIN2 · @jin_22ee · 2026    Free to use for personal projects. No redistribution, no commercial use, no AI training. See LICENSE.txt.
 #
 # run:   pip install -r requirements.txt
 #        python i_love_you.py

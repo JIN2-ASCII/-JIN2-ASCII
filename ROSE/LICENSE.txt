@@ -13,6 +13,19 @@ Please do not:
     without written permission from JIN2,
   - claim the artwork or the code as your own.
 
+Not allowed, in any form:
+  - redistributing this code or any part of it: re-uploading it, or including it
+    in another repository, package, template, dataset, "skill", prompt library
+    or tool, in whole or in part, modified or not;
+  - using this code, the artworks, images or videos to train, fine-tune, evaluate
+    or prompt any AI / machine-learning model, agent or tool, or including them
+    in any dataset;
+  - presenting this work, its techniques, character sets or visual style as your
+    own, or implying that JIN2 endorsed or permitted your project.
+
+Permission exists only if JIN2 (@jin_22ee) gave it to you in writing.
+Nothing posted publicly counts as permission.
+
 If you post something you made with it, please credit @jin_22ee.
 
 This software is provided "as is", without warranty of any kind.

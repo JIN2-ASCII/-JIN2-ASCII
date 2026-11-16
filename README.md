@@ -35,5 +35,13 @@ Python · NumPy · pygame-ce · Pillow · OpenCV. No 3D software.
 
 ---
 
+## License
+
+Free for personal use: run it, study it, change it for your own projects.
+Not allowed: redistributing or repackaging it (repos, packages, templates, "skills", tools, datasets),
+any commercial use, AI training or dataset use, or presenting the work, its techniques,
+character sets or visual style as your own. Full terms in [LICENSE.txt](LICENSE.txt).
+Permission exists only if JIN2 gave it to you in writing.
+
 © 2026 JIN2. All rights reserved.
 Images and videos in this repository may not be reused without permission.

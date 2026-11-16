@@ -1,5 +1,5 @@
 # Skipped a Beat
-# JIN2 (@jin_22ee), 2026. Full code, shared for personal projects, see LICENSE.txt.
+# JIN2 (@jin_22ee), 2026. Full code, shared for personal projects. No redistribution, no commercial use, no AI training. See LICENSE.txt.
 #
 #   pip install -r requirements.txt
 #   python skipped_a_beat.py
