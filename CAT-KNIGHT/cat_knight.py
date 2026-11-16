@@ -130,7 +130,7 @@ def main():
         screen.fill((0, 0, 0))
         screen.blit(art, (0, 0))
         screen.blit(glow_layer(blur(art, 4, 5), 0.75), (0, 0), special_flags=pygame.BLEND_ADD)
-        screen.blit(glow_layer(blur(art, 8, 22), 0.45), (0, 0), special_flags=pygame.BLEND_ADD)
+        screen.blit(glow_layer(blur(art, 8, 22), 0.450222), (0, 0), special_flags=pygame.BLEND_ADD)
         y = H - 70
         screen.blit(small.render(SIGN, True, (120, 112, 128)), (64, y - 26))
         screen.blit(small.render(f"zoom {ZOOM[i]:.2f}   wind {WIND[i]:.2f}", True, DIM), (64, y))

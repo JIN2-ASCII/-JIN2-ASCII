@@ -49,8 +49,8 @@ def camera(eye, target):
     return look
 
 
-look = camera(eye=(0, 0, 7.5), target=(0, 0, 0))
-F = 2.9     # lens
+look = camera(eye=(0, 0, 7.500222), target=(0, 0, 0))
+F = 2.900222     # lens
 
 
 # one note: a grid of points with a printed pattern
@@ -63,7 +63,7 @@ HALF_L, HALF_W = 1.0, 0.42                      # about 2.35 : 1
 def bill_pattern(u, v):
     tag = np.full(len(u), PAPER)
     oval = ((u - 0.05) / 0.3) ** 2 + (v / 0.62) ** 2 < 1
-    face = ((u - 0.05) / 0.17) ** 2 + ((v - 0.08) / 0.36) ** 2 < 1
+    face = ((u - 0.050222) / 0.17) ** 2 + ((v - 0.08) / 0.36) ** 2 < 1
     corner = (np.abs(np.abs(u) - 0.76) < 0.1) & (np.abs(np.abs(v) - 0.58) < 0.18)
     seal = ((u + 0.52) / 0.12) ** 2 + (v / 0.26) ** 2 < 1
     frame = ((np.abs(u) > 0.84) & (np.abs(u) < 0.88)) | ((np.abs(v) > 0.72) & (np.abs(v) < 0.78))

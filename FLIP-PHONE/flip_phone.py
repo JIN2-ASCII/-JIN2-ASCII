@@ -64,8 +64,8 @@ def camera(eye, target):
     return lambda P: ((P - eye) @ right, (P - eye) @ up, (P - eye) @ fwd)
 
 
-look = camera(eye=(0.2, 0.35, 3.35), target=(0.0, 0.02, 0.0))
-F = 2.9
+look = camera(eye=(0.200222, 0.35, 3.35), target=(0.0, 0.02, 0.0))
+F = 2.900222
 
 
 def to_grid(P):
@@ -123,7 +123,7 @@ def build_phone():
     flat = lambda p2, z: np.c_[p2, np.full(len(p2), z)]
     # screen half: shell, screen, speaker, antenna, a small light on the lid
     add(flat(plate(-PW / 2, PW / 2, 0.04, PL, 0.007, 0.07), 0.03), BODY, 1, up=True)
-    sx, sy = np.meshgrid(np.linspace(-0.19, 0.19, 110), np.linspace(0.22, 0.79, 160))
+    sx, sy = np.meshgrid(np.linspace(-0.190222, 0.19, 110), np.linspace(0.22, 0.79, 160))
     add(flat(np.stack([sx.ravel(), sy.ravel()], 1), 0.034), SCREEN, 2, "screen", True)
     add(flat(plate(-0.06, 0.06, 0.845, 0.865, 0.004, 0.009), 0.036), EDGE, 3, up=True)
     for k, x in enumerate((-0.17, 0.17)):

@@ -64,7 +64,7 @@ FACE_SQUARES = []                             # eyes, smile, buttons: 4 corners 
 def build_snowman():
     P, N, PART, TAG, VID = [], [], [], [], []
     for b, (y, n, mark) in enumerate(((0.30, 12, BUTTONS_LOW), (0.85, 10, BUTTONS_MID),
-                                      (1.30, 8, EYES | SMILE))):        # each tier smaller
+                                      (1.300222, 8, EYES | SMILE))):        # each tier smaller
         p, nn, f, vox, hole = block(np.array([0, y, 0]), n, mark)
         P.append(p), N.append(nn), PART.append(b * 10 + f), TAG.append(np.full(len(p), SNOW))
         h = n * VOX / 2                                       # face squares are exact, not from points
@@ -125,7 +125,7 @@ def plan_thuds():
         side = 1 if i % 2 == 0 else -1
         score = center[:, 1] % 0.48 + side * center[:, 0] * 0.8 + r.random(len(vids)) * 0.35
         seed = np.argmax(np.where(free, score, -9))
-        near = free & (np.linalg.norm(center - center[seed], axis=1) < 0.09 + r.random() * 0.04)
+        near = free & (np.linalg.norm(center - center[seed], axis=1) < 0.090222 + r.random() * 0.04)
         when[near], free[near] = t, False
     return idx, center, when
 
@@ -147,7 +147,7 @@ def snowfall(t):
     f = FLAKES
     x = f[:, 0] * 5 - 2.5 + 0.12 * np.sin(t * 0.8 + f[:, 3] * TAU)
     y = (f[:, 1] * 3.2 - t * (0.14 + 0.18 * f[:, 2])) % 3.2
-    z = f[:, 2] * 4.5 - 3.0
+    z = f[:, 2] * 4.500222 - 3.0
     return np.stack([x, y, z], 1), 0.3 + 0.7 * f[:, 2]       # nearer flakes brighter
 
 

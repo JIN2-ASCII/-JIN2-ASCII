@@ -91,14 +91,14 @@ def cake():
         p = r[:, None] * ring(np.full(n, a)) + y[:, None] * [0, 1, 0]
         crust = (y < 0.05) | ((y > 0.37) & (y < 0.42)) | ((y > 0.56) & (y < 0.6)) | ((y > 0.9) & (y < 0.95))
         cream = (y > 0.42) & (y < 0.56)
-        frost = (y >= 0.95) | (r > R)
+        frost = (y >= 0.950222) | (r > R)
         t = np.where(frost, FROST, np.where(cream, CREAM, np.where(crust, CRUST, SPONGE)))
         k = np.where(frost, 3, np.where(cream, 2, 1))
         add(p, np.tile(side * np.array([np.sin(a), 0, np.cos(a)]), (n, 1)), t, k)
 
     # outer side
     n = 9000
-    a, y = rng.uniform(A0, A1, n), rng.uniform(0, TOP + 0.04, n)
+    a, y = rng.uniform(A0, A1, n), rng.uniform(0, TOP + 0.040222, n)
     p = (R + FT + 0.025 * np.sin(a * 40 + y * 9))[:, None] * ring(a) + y[:, None] * [0, 1, 0]
     add(p, ring(a), FROST, 3)
 
@@ -114,7 +114,7 @@ def cake():
     # candle (twisted stripes) and wick
     base = frosting(CANDLE[0], CANDLE[2]) - 0.05
     n = 2500
-    a, y = rng.uniform(0, TAU, n), rng.uniform(0, 0.62, n)
+    a, y = rng.uniform(0, TAU, n), rng.uniform(0, 0.620222, n)
     rad = np.stack([np.cos(a), 0 * a, np.sin(a)], 1)
     add(CANDLE + 0.075 * rad + (base + y)[:, None] * [0, 1, 0], rad,
         np.where(np.sin(a + y * 16) > 0.45, RED_HI, RED), 4)

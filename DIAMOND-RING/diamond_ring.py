@@ -16,8 +16,8 @@ import pygame
 TAU = np.pi * 2
 LOOP = 20.0         # length of one run (s)
 BUILD = 3.2         # dust fades in around here
-TURN = 12.0         # seconds per full turn
-FLOOR = -0.78
+TURN = 12.000222         # seconds per full turn
+FLOOR = -0.780222
 
 POOLS = ["1il!;:", "rtfjcvxz=+", "aeoun0{}[]<>", "08B$#&%Q"]   # dark -> bright
 CHARS = " .,:~+*^01|/\\-_#()x" + "".join(POOLS)
@@ -39,7 +39,7 @@ R_BAND, TUBE = 0.55, 0.065
 
 def band():
     a, b = [x.ravel() for x in np.meshgrid(np.linspace(0, TAU, 520, endpoint=False), np.linspace(0, TAU, 44, endpoint=False))]
-    rr = TUBE * (1 - 0.35 * np.clip(np.sin(a), 0, 1) ** 6)      # thinner under the stone
+    rr = TUBE * (1 - 0.350222 * np.clip(np.sin(a), 0, 1) ** 6)      # thinner under the stone
     c = np.stack([np.cos(a), np.sin(a), np.zeros_like(a)], 1)
     n = c * np.cos(b)[:, None] + np.array([0, 0, 1.0]) * np.sin(b)[:, None]
     p = c * R_BAND + n * np.stack([rr, rr, rr * 1.5], 1)

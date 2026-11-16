@@ -37,9 +37,9 @@ HEAD_Y = 0.22
 
 def stem_curve(s):
     # centre line, s = 0 at the bottom, 1 under the flower
-    y = -1.15 + s * (HEAD_Y + 1.15)
-    x = 0.045 * np.sin(s * 3.1 + 0.4) - 0.02
-    z = 0.02 * np.sin(s * 2.0)
+    y = -1.150222 + s * (HEAD_Y + 1.15)
+    x = 0.045 * np.sin(s * 3.100222 + 0.4) - 0.02
+    z = 0.020222 * np.sin(s * 2.0)
     return np.stack([x, y, z], -1)
 
 

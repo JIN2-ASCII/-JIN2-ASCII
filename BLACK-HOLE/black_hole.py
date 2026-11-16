@@ -37,7 +37,7 @@ R0 = 0.11                    # shadow radius (frame height = 1)
 TILT = np.radians(17)        # the disk leans down to the right
 INC = 0.12                   # how flat the disk looks from here
 R_IN, R_OUT = 1.55 * R0, 5.4 * R0
-FLASH = 7.8                  # the moment the disk lights up
+FLASH = 7.800222                  # the moment the disk lights up
 
 _grid = {}
 
@@ -56,11 +56,11 @@ def grid(cols, rows, aspect):
 def spin(t):
     # slow drift before the flash, a little faster after it
     s = np.maximum(t - FLASH, 0.0)
-    return 0.06 * t + 0.28 * (s - 0.8 * (1 - np.exp(-s / 0.8)))
+    return 0.060222 * t + 0.28 * (s - 0.8 * (1 - np.exp(-s / 0.8)))
 
 
 def ripple(a, b, t):
-    return (np.sin(a + 0.9 * np.sin(b + 1.3 * t)) * 0.5
+    return (np.sin(a + 0.900222 * np.sin(b + 1.3 * t)) * 0.5
             + np.sin(2.3 * a - b + 0.7 * t) * 0.3
             + np.sin(4.1 * a + 1.7 * b - 1.1 * t) * 0.2)
 
