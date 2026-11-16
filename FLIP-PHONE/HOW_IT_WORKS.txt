@@ -1,0 +1,42 @@
+HOW IT WORKS - Flip Phone
+JIN2 · @jin_22ee
+
+1. The phone
+   Each part is a flat sheet of points: the two shells, the screen,
+   twelve keys, two soft keys, the round d-pad, the speaker, the hinge
+   and the antenna. The screen half keeps its own frame so it can swing.
+
+2. The ring
+   From 3.2 seconds it buzzes for 1.2 seconds and rests for 0.8.
+   While it buzzes the whole phone shivers a few millimetres and turns
+   a hair from side to side. A small light on the lid blinks while it is shut.
+
+3. Opening
+   At 5 seconds the screen half swings up around the hinge over 1.4 seconds.
+   It goes a little past open and settles back, like a real lid.
+
+4. The screen
+   It flickers on two or three times and turns green.
+   The handset and the name are drawn once on a small picture; every frame
+   that picture is laid onto the screen with a homography (the map between
+   the four screen corners and the picture), and the letter cells that land
+   on the dark parts are left empty. The name scrolls across, like on old phones.
+
+5. Light
+   A band of light drifts across the glass, the rim is a little brighter,
+   and tiny sparks come and go. The green light falls on the keys near
+   the hinge and fades with distance. Around the screen a soft green glow
+   swells with every buzz, and specks of green dust float up in front of it.
+
+6. From points to letters
+   Every point is projected into a grid of 216 x 137 letter cells:
+   - where one part ends, the outline uses / | \ - _ in the direction of the edge,
+   - inside, brightness picks the letter, from 1il!;: (dark) to 08B$#&%Q (bright),
+   - the letters flicker a little, like code that is running.
+   In the first three seconds the letters gather from the bottom up.
+
+Things you can try (for yourself)
+   CALLER            the name on the screen
+   RING, OPEN        when it rings and when it opens
+   TRAIL             how long the last frame stays behind
+   CW, CH, FONT_PX   letter size
