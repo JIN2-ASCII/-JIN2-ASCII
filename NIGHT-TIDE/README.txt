@@ -46,7 +46,25 @@ TESTED ON
 PLEASE NOTE
 ------------------------------------------------------------
 - This is the artwork itself, running live on your computer (not a video file).
-- Free for personal projects. Please don't sell it or claim it as your own.
-  See LICENSE.txt.
+
+------------------------------------------------------------
+RULES
+------------------------------------------------------------
+I share this code for you. You can run it, study it and change it
+for your own personal projects. Please do NOT:
+
+  - repost this code, or a changed version of it, as your own
+  - post videos made from it as your own artwork
+  - sell it or any changed version of it
+  - use it or its output in anything commercial
+    (ads, products, client work, monetised videos, NFTs, templates)
+    without written permission from JIN2
+  - use it or its output to train AI
+
+If you post something you made with it, credit @jin_22ee.
+If you see this code or this artwork posted as someone else's,
+please report it and let me know on Instagram @jin_22ee.
+
+Full terms: LICENSE.txt
 
 Questions: Instagram @jin_22ee

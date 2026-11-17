@@ -1,5 +1,7 @@
 # NIGHT TIDE
 # JIN2 · @jin_22ee · 2026    Free to use for personal projects. No redistribution, no commercial use, no AI training. See LICENSE.txt.
+# Do not repost this code or a changed version of it as your own, or post videos made from it as your own art.
+# If you see it posted as someone else's, please report it and let me know (@jin_22ee).
 #
 # run:   pip install -r requirements.txt
 #        python night_tide.py

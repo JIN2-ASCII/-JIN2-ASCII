@@ -38,7 +38,15 @@ The full Python source is free and included in this folder.
 python rose.py
 ```n
 Space pause, R restart, S screenshot, Esc quit.
-Free for personal projects. Please credit @jin_22ee if you share what you make. See LICENSE.txt.
+Rules for using this code:
+- Do not repost it, or a changed version of it, as your own.
+- Do not post videos made from it as your own artwork.
+- Do not sell it or use it commercially without written permission.
+- Do not use it or its output to train AI.
+- If you share something you made with it, credit @jin_22ee.
+- If you see this code or the artwork posted as someone else's, please report it and let me know on Instagram [@jin_22ee](https://instagram.com/jin_22ee).
+
+Full terms: [LICENSE.txt](LICENSE.txt)
 
 If you'd like to support my work, the same code is also on [Payhip](https://payhip.com/b/7WP5A).
 

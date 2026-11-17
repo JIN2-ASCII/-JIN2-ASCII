@@ -40,8 +40,10 @@ Python · NumPy · pygame-ce · Pillow · OpenCV. No 3D software.
 
 Free for personal use: run it, study it, change it for your own projects.
 Not allowed: redistributing or repackaging it (repos, packages, templates, "skills", tools, datasets),
+reposting it or a changed version of it as your own, posting videos made from it as your own artwork,
 any commercial use, AI training or dataset use, or presenting the work, its techniques,
 character sets or visual style as your own. If you post anything made with it, you must credit "@jin_22ee" in the caption or description.
+If you see my code or artwork posted as someone else's, please report it and let me know on Instagram [@jin_22ee](https://instagram.com/jin_22ee).
 Full terms in [LICENSE.txt](LICENSE.txt).
 Permission exists only if JIN2 gave it to you in writing.
 
