@@ -8,13 +8,6 @@
 #
 # Space pause, R restart, S screenshot, Esc quit
 
-# ========== change only these 4 lines ==========
-CALLER = "babydoll"              # name on the screen (english, 5 letters max shows best)
-OPEN = (5.0, 6.4)                # (lid starts moving, lid fully open) in seconds. it rings at 3.2
-SCREEN_COLOR = (110, 255, 140)   # screen light (red, green, blue), each 0-255
-PHONE_COLOR = (120, 122, 132)    # phone body (red, green, blue), each 0-255
-# ===============================================
-
 import sys
 import time
 from pathlib import Path
@@ -24,6 +17,7 @@ import pygame
 
 TITLE = "Flip Phone - JIN2"
 SIGN = "@jin_22ee · 2026"
+CALLER = "babydoll"
 FPS = 30
 CW, CH, FONT_PX = 5, 7, 8                # one letter cell, in pixels
 W, H = 1080, 960
@@ -32,6 +26,7 @@ ASPECT = (COLS * CW) / (ROWS * CH)
 TRAIL = 0.25                             # how much of the last frame stays behind
 LOOP, BUILD = 16.0, 3.0
 RING = 3.2                               # the call comes in while it is still shut
+OPEN = (5.0, 6.4)                        # then it flips open
 DIM, PINK = (110, 104, 120), (255, 122, 182)
 MONO = "consolas,menlo,dejavusansmono,couriernew,monospace"
 TAU = np.pi * 2
@@ -42,21 +37,9 @@ AT = {c: i for i, c in enumerate(CHARS)}
 FILL = np.array([[AT[p[k % len(p)]] for k in range(12)] for p in POOLS])
 
 BODY, EDGE, KEY, SCREEN, DARK, ANT, SHINE, GLINT, LED, TINT1, TINT2, TINT3 = range(12)
-SCREEN_BASE, PHONE_BASE = (110, 255, 140), (120, 122, 132)
-
-
-def tint(rgb, new, base):
-    # scale a color by how far your pick is from the original green / grey
-    return [min(255.0, c * n / b) for c, n, b in zip(rgb, new, base)]
-
-
-S, P = (SCREEN_COLOR, SCREEN_BASE), (PHONE_COLOR, PHONE_BASE)
-COLORS = np.array([tint([120, 122, 132], *P), tint([190, 192, 204], *P), tint([176, 178, 190], *P),
-                   tint([110, 255, 140], *S), tint([40, 64, 48], *S), tint([150, 152, 164], *P),
-                   tint([214, 255, 226], *S), [255, 255, 255], tint([140, 255, 160], *S),
-                   tint([146, 172, 156], *S), tint([128, 204, 150], *S), tint([116, 232, 146], *S)], np.float32) / 255
-GLOW_RGB = [c * n / b for c, n, b in zip([0.02, 0.13, 0.045], SCREEN_COLOR, SCREEN_BASE)]
-FLASH_RGB = [c * n / b for c, n, b in zip([0.05, 0.14, 0.07], SCREEN_COLOR, SCREEN_BASE)]
+COLORS = np.array([[120, 122, 132], [190, 192, 204], [176, 178, 190], [110, 255, 140], [40, 64, 48],
+                   [150, 152, 164], [214, 255, 226], [255, 255, 255], [140, 255, 160],
+                   [146, 172, 156], [128, 204, 150], [116, 232, 146]], np.float32) / 255
 
 rng = np.random.default_rng(3)
 
@@ -357,7 +340,7 @@ _Y, _X = (np.mgrid[0:H // GS, 0:W // GS].astype(np.float32) + 0.5) * GS
 
 
 def screen_glow(t, screen):
-    # light spilling out of the screen; it swells with every buzz
+    # green light spilling out of the screen; it swells with every buzz
     if screen["lit"] <= 0.05:
         return None
     cx, cy, _ = to_grid(screen["corners"].mean(0))
@@ -366,7 +349,7 @@ def screen_glow(t, screen):
     r = 220 + 80 * at(t, BUZZ) + 120 * flash
     g = np.exp(-((_X - bx) ** 2 + (_Y - by) ** 2) / (2 * r ** 2))[..., None]
     pulse = 0.85 + 0.15 * at(t, BUZZ)
-    return g * GLOW_RGB * screen["lit"] * pulse + g * FLASH_RGB * flash
+    return g * [0.02, 0.13, 0.045] * screen["lit"] * pulse + g * [0.05, 0.14, 0.07] * flash
 
 
 class Canvas:
