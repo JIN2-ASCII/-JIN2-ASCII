@@ -36,7 +36,12 @@ JIN2 · @jin_22ee
    In the first three seconds the letters gather from the bottom up.
 
 Things you can try (for yourself)
+   The 4 lines at the very top of flip_phone.py:
    CALLER            the name on the screen
-   RING, OPEN        when it rings and when it opens
+   OPEN              when the lid starts moving and when it is fully open
+   SCREEN_COLOR      the screen light, (red, green, blue), each 0-255
+   PHONE_COLOR       the phone body, (red, green, blue), each 0-255
+   Further down:
+   RING              when it starts ringing
    TRAIL             how long the last frame stays behind
    CW, CH, FONT_PX   letter size
