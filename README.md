@@ -10,6 +10,7 @@ what each piece is, why it was made, and which techniques shaped it.
 
 | | Work | Year | Source code |
 |---|---|---|---|
+| ![](GNOME/images/02_hello.png) | [GNOME](GNOME/) | 2026 | free, in this repository |
 | ![](FLIP-PHONE/images/03_calling.png) | [FLIP PHONE (Incoming Call)](FLIP-PHONE/) | 2026 | full code, in this repository |
 | ![](GOOD-LUCK/images/03_front.png) | [GOOD LUCK (Four-Leaf Clover)](GOOD-LUCK/) | 2026 | free, in this repository |
 | ![](SKIPPED-A-BEAT/images/03_heart.png) | [SKIPPED A BEAT](SKIPPED-A-BEAT/) | 2026 | full code, in this repository |

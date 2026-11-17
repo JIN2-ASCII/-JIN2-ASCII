@@ -1,0 +1,45 @@
+HOW IT WORKS - Gnome
+JIN2 · @jin_22ee
+
+The whole artwork is one Python file. A small gnome with a lantern peeks
+out from the right edge, comes over to say hello, then turns round and
+walks off into the snow. Every part of it is made of letters.
+
+1. A real 3D figure
+   The coat, head, nose, mittens, boots and pompom are egg shapes covered
+   in evenly spaced points. The beard is a curved sheet wrapped round the
+   front, and the hat is a tall cone built from rings around a bent spine.
+   Because it is 3D, the gnome can turn all the way round.
+
+2. Letters
+   Each point is projected onto a grid of letters. Far points are drawn
+   first and near ones paint over them. Brighter spots get denser letters
+   (from 1 i l up to 8 B $ #), and the letters inside keep changing.
+   Edges get / | \ - _ so the outline reads like a drawing.
+
+3. The coat pattern
+   A white knit pattern (a line, a zigzag, a row of dots) is wrapped all
+   the way round the coat, so it shows from the front, side and back.
+
+4. The lantern
+   A box with a roof, posts and a candle flame hangs from one hand and
+   swings with every step. Around it is a warm halo, a pool of light on
+   the snow, and anything close to it gets brighter. The flame flickers.
+
+5. Motion
+   It slides out, slows down before it stops and turns its head to look
+   at you. It walks toward you, so it grows, waves, glances left and
+   right, then turns round and walks away along a soft curve, getting
+   smaller. Its steps slow down together with its body, and the hat tip
+   swings as it walks.
+
+6. Footprints and snow
+   Every step leaves a white footprint turned the way it was walking.
+   Snow falls the whole time.
+
+Things you can try (for yourself)
+   WAVE, SHY, OUT     when it waves, looks around and turns to leave
+   CENTER             where it stops to say hello
+   HAT_LEN, HAT_R     the size of the hat
+   LS                 the size of the lantern
+   TAG_COLOR          the colours
