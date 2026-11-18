@@ -8,12 +8,11 @@
 #
 # Space pause, R restart, S screenshot, Esc quit
 
-# ========== change only these 4 lines ==========
+# Change these four lines to make it your own.
 CALLER = "babydoll"              # name on the screen (english, 5 letters max shows best)
 OPEN = (5.0, 6.4)                # (lid starts moving, lid fully open) in seconds. it rings at 3.2
 SCREEN_COLOR = (110, 255, 140)   # screen light (red, green, blue), each 0-255
 PHONE_COLOR = (120, 122, 132)    # phone body (red, green, blue), each 0-255
-# ===============================================
 
 import sys
 import time
