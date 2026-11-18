@@ -49,20 +49,18 @@ PLEASE NOTE
 ------------------------------------------------------------
 RULES
 ------------------------------------------------------------
-I share this code for you. You can run it, study it and change it
-for your own personal projects. Please do NOT:
+I share this code for you. Study it, change it, and use what you learn
+to make your own ASCII art. That's what it's here for.
 
-  - repost this code, or a changed version of it, as your own
-  - post videos made from it as your own artwork
-  - sell it or any changed version of it
-  - use it or its output in anything commercial
-    (ads, products, client work, monetised videos, NFTs, templates)
-    without written permission from JIN2
-  - use it or its output to train AI
+Please don't:
+  - repost this code, or a big part of it, as your own
+  - post my artwork (videos or images) as your own
+  - sell it, or use it commercially without my permission
+  - use it with AI
 
-If you post something you made with it, credit @jin_22ee.
-If you see this code or this artwork posted as someone else's,
-please report it and let me know on Instagram @jin_22ee.
+If you share something you made with it, a credit to @jin_22ee is
+always appreciated. If you see my code or artwork posted as someone
+else's, please report it and let me know.
 
 Full terms: LICENSE.txt
 

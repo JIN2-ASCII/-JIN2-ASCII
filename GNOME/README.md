@@ -42,12 +42,13 @@ python gnome.py
 
 Space pause, R restart, S screenshot, Esc quit.
 Rules for using this code:
-- Do not repost it, or a changed version of it, as your own.
-- Do not post videos made from it as your own artwork.
-- Do not sell it or use it commercially without written permission.
-- Do not use it or its output to train AI.
-- If you share something you made with it, credit @jin_22ee.
-- If you see this code or the artwork posted as someone else's, please report it and let me know on Instagram [@jin_22ee](https://instagram.com/jin_22ee).
+I share this code for you. Study it, change it, and use what you learn to make your own ASCII art.
+- Don't repost this code, or a big part of it, as your own.
+- Don't post my artwork (videos or images) as your own.
+- Don't sell it, or use it commercially without my permission.
+- Don't use it with AI.
+
+A credit to @jin_22ee is always appreciated. If you see my code or artwork posted as someone else's, please report it and let me know on Instagram [@jin_22ee](https://instagram.com/jin_22ee).
 
 Full terms: [LICENSE.txt](LICENSE.txt)
 

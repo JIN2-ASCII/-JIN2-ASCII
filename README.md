@@ -39,14 +39,11 @@ Python · NumPy · pygame-ce · Pillow · OpenCV. No 3D software.
 
 ## License
 
-Free for personal use: run it, study it, change it for your own projects.
-Not allowed: redistributing or repackaging it (repos, packages, templates, "skills", tools, datasets),
-reposting it or a changed version of it as your own, posting videos made from it as your own artwork,
-any commercial use, AI training or dataset use, or presenting the work, its techniques,
-character sets or visual style as your own. If you post anything made with it, you must credit "@jin_22ee" in the caption or description.
-If you see my code or artwork posted as someone else's, please report it and let me know on Instagram [@jin_22ee](https://instagram.com/jin_22ee).
+I share this code for you. Study it, change it, and use what you learn to make your own ASCII art.
+Please don't repost this code, or a big part of it, as your own, don't post my artwork as your own,
+don't sell it or use it commercially without my permission, and don't use it with AI.
+A credit to @jin_22ee is always appreciated. If you see my code or artwork posted as someone else's, please report it and let me know on Instagram [@jin_22ee](https://instagram.com/jin_22ee).
 Full terms in [LICENSE.txt](LICENSE.txt).
-Permission exists only if JIN2 gave it to you in writing.
 
 © 2026 JIN2. All rights reserved.
 Images and videos in this repository may not be reused without permission.

@@ -1,7 +1,6 @@
 # Cat Knight
-# JIN2 (@jin_22ee), 2026. Full code, shared for personal projects. No redistribution, no commercial use, no AI training. See LICENSE.txt.
-# Do not repost this code or a changed version of it as your own, or post videos made from it as your own art.
-# If you see it posted as someone else's, please report it and let me know (@jin_22ee).
+# JIN2 · @jin_22ee · 2026. Free for learning and personal projects. See LICENSE.txt.
+# Don't repost it or sell it as your own, and don't use it with AI.
 #
 #   pip install -r requirements.txt
 #   python cat_knight.py

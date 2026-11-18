@@ -1,36 +1,18 @@
 I Love You
 Copyright (c) 2026 JIN2 (@jin_22ee). All rights reserved.
 
-This code is shared for free. You may:
-  - run it on your own computer,
-  - read and study it,
-  - change it for your own personal projects and experiments.
+You may:
+  - run, read and study this code,
+  - change it for your own personal projects,
+  - learn from it and make your own ASCII art.
 
-Please do not:
-  - sell it or any modified version of it,
-  - use it or its output in anything commercial
-    (ads, products, client work, monetised videos, NFTs, templates)
-    without written permission from JIN2,
-  - claim the artwork or the code as your own.
+You may not:
+  - repost or redistribute this code, or a big part of it, as your own,
+  - post the artwork (videos or images) as your own,
+  - sell it, or use it or its output commercially without written
+    permission from JIN2,
+  - use it with AI.
 
-Not allowed, in any form:
-  - redistributing this code or any part of it: re-uploading it, or including it
-    in another repository, package, template, dataset, "skill", prompt library
-    or tool, in whole or in part, modified or not;
-  - using this code, the artworks, images or videos to train, fine-tune, evaluate
-    or prompt any AI / machine-learning model, agent or tool, or including them
-    in any dataset;
-  - presenting this work, its techniques, character sets or visual style as your
-    own, or implying that JIN2 endorsed or permitted your project.
-
-Permission exists only if JIN2 (@jin_22ee) gave it to you in writing.
-Nothing posted publicly counts as permission.
-
-If you post anything made with this code or its output anywhere (Instagram, YouTube,
-TikTok, a website...), you must credit JIN2 visibly: write "@jin_22ee" in the caption
-or description. That's all I ask.
-
-If you see this code or its artwork posted as someone else's, please report it
-and let JIN2 know on Instagram @jin_22ee.
+Credit to @jin_22ee is appreciated when you share what you make.
 
 This software is provided "as is", without warranty of any kind.
