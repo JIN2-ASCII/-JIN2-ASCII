@@ -1,0 +1,53 @@
+HOW IT WORKS - Goldfish
+JIN2 · @jin_22ee
+
+The whole artwork is one Python file. Six goldfish swim through dark
+water. One of them stops for a moment to look at you, then swims on.
+Every part of it is made of letters.
+
+1. A real 3D fish
+   The side outline of a goldfish is written down as points: the back,
+   the round belly, the high dorsal fin, the two-lobed tail. The body is
+   that outline swept round in ellipses, so it is truly round and can be
+   seen from the side, from the front and from any angle in between.
+   The gill cover is a separate part, raised a little above the body.
+
+2. Scales and colour
+   Rows of scales are offset like real ones, each brighter at its edge.
+   The back is deep red, the flank orange and gold, the belly pale.
+
+3. Fins and tail
+   Each fin is a filled shape with thin rays fanning out from the root.
+   Near the body it is solid; toward the edge it thins out letter by
+   letter until it disappears. The tail follows the body's swing a beat
+   later, and its tips flutter. The side fins open away from the body
+   and paddle while the fish swims.
+
+4. Eyes and mouth
+   The eyes bulge out to the sides and turn slightly forward, so both
+   show when a fish faces you. The mouth is a ring of lips that opens
+   and closes.
+
+5. Light
+   The light comes from the upper left. Each point of the body knows
+   which way it faces, so the side toward the light is brighter, and
+   the edges of the scales catch a highlight. Now and then a single
+   scale flashes like a little star.
+
+6. Motion
+   Each fish follows its own path through the water, near and far, with
+   its own pace: one glides, one darts and pauses, small ones drift far
+   behind. They turn smoothly toward where they are going, and the tail
+   beats faster when they speed up. Bubbles rise the whole time.
+
+7. Letters
+   Every point is projected onto a grid of letters. Far points are drawn
+   first and near ones paint over them. Brighter spots get denser
+   letters (from 1 i l up to 8 B $ #), and the letters inside keep
+   changing. Edges get / | \ - _ so the outline reads like a drawing.
+
+Things you can try (for yourself)
+   FISH        sizes and paths of the six fish (time, x, y, z)
+   LIGHT       where the light comes from
+   TAG_COLOR   the colours
+   CELL        letter size

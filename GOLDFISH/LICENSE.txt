@@ -1,0 +1,18 @@
+Goldfish
+Copyright (c) 2026 JIN2 (@jin_22ee). All rights reserved.
+
+You may:
+  - run, read and study this code,
+  - change it for your own personal projects,
+  - learn from it and make your own ASCII art.
+
+You may not:
+  - repost or redistribute this code, or a big part of it, as your own,
+  - post the artwork (videos or images) as your own,
+  - sell it, or use it or its output commercially without written
+    permission from JIN2,
+  - use it with AI.
+
+Credit to @jin_22ee is appreciated when you share what you make.
+
+This software is provided "as is", without warranty of any kind.
