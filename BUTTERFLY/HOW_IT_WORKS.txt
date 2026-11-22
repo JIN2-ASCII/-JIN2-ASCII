@@ -1,0 +1,48 @@
+HOW IT WORKS - Butterfly
+JIN2 · @jin_22ee
+
+The whole artwork is one Python file. Something strikes a glass wall
+from behind until it breaks, and butterflies come out of the hole.
+Every part of it is made of letters.
+
+1. Wings
+   A forewing and a hindwing are written down as outlines. Random points
+   are kept only if they fall inside, so each wing is a cloud of points
+   in its real shape. Points near the body are brighter.
+
+2. Flight
+   The wings rise and fall on each butterfly's own beat. The body dips a
+   little as the wings come down, faces its back toward you so the wings
+   read clearly, and leans into a turn.
+
+3. Paths
+   Twenty-two butterflies, each with a home position at its own depth.
+   They wander in slow loops around it, wide enough to leave the frame
+   and come back later. Far ones are smaller and dimmer. Each one starts
+   small at the hole and grows as it squeezes out.
+
+4. Glass
+   The cracks only move when the wall is hit. A light first knock makes
+   a hairline, then four hits drive the cracks further. Each crack is a
+   random walk that keeps its heading and forks now and then. It is
+   thick near the impact and thins out toward the tip. Round cracks
+   join the long ones, the center turns to white powder, and on the
+   last hit the center pieces drop out under gravity.
+
+5. Dust
+   Every hit shakes loose a puff of dust, powder keeps falling off the
+   broken edge, and the butterflies shake glitter from their wings that
+   drifts and settles.
+
+6. Letters
+   Every point is projected onto a grid of letters. Far points are drawn
+   first and near ones paint over them. Brighter spots get denser
+   letters (from 1 i l up to 8 B $ #). Cracks get / | \ - _ in the
+   direction they run.
+
+Things you can try (for yourself)
+   GATE        where the wall breaks
+   THUDS       when it is hit
+   N           how many long cracks
+   TAG_COLOR   the colours
+   CELL        letter size
