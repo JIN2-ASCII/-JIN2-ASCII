@@ -60,7 +60,7 @@ Please don't:
   - repost this code, or a big part of it, as your own
   - post my artwork (videos or images) as your own
   - sell it, or use it commercially without my permission
-  - use it with AI
+  - use it to train AI models
 
 If you share something you made with it, a credit to @jin_22ee is
 always appreciated. If you see my code or artwork posted as someone

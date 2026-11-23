@@ -43,7 +43,7 @@ Python · NumPy · pygame-ce · Pillow · OpenCV. No 3D software.
 
 I share this code for you. Study it, change it, and use what you learn to make your own ASCII art.
 Please don't repost this code, or a big part of it, as your own, don't post my artwork as your own,
-don't sell it or use it commercially without my permission, and don't use it with AI.
+don't sell it or use it commercially without my permission, and don't use it to train AI models.
 A credit to @jin_22ee is always appreciated. If you see my code or artwork posted as someone else's, please report it and let me know on Instagram [@jin_22ee](https://instagram.com/jin_22ee).
 Full terms in [LICENSE.txt](LICENSE.txt).
 

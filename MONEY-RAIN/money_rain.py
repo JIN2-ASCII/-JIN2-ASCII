@@ -1,6 +1,6 @@
 # Money Rain
 # JIN2 · @jin_22ee · 2026. Free for learning and personal projects. See LICENSE.txt.
-# Don't repost it or sell it as your own, and don't use it with AI.
+# Don't repost it or sell it as your own, and don't use it to train AI models.
 #
 #   pip install -r requirements.txt
 #   python money_rain.py

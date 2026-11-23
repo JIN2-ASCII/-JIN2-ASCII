@@ -14,7 +14,7 @@ You may not:
   - post the artwork (videos or images) as your own,
   - sell it, or use it or its output commercially without written
     permission from JIN2,
-  - use it with AI.
+  - use it to train AI models.
 
 Credit to @jin_22ee is appreciated when you share what you make.
 If you see my code or artwork posted as someone else's, please report it
