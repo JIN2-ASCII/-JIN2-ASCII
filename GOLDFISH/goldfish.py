@@ -17,7 +17,7 @@ from types import SimpleNamespace
 import numpy as np
 
 os.environ.setdefault("PYGAME_HIDE_SUPPORT_PROMPT", "1")
-import pygame  # noqa: E402
+import pygame
 
 # letters, dark to bright
 POOLS = ["1il!;:", "rtfjcvxz=+", "aeoun0{}[]<>", "08B$#&%Q"]
