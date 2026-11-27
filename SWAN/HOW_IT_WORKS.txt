@@ -1,0 +1,54 @@
+HOW IT WORKS - Swan
+JIN2 · @jin_22ee
+
+The artwork is one Python file plus a small data file. Two swans glide
+on dark water: one comes in from the right, the other from far back on
+the left. They meet, lower their heads until the beaks touch, and their
+necks make a heart. Then the second swan slips behind the first, turns
+far back, and follows it out of frame. Every part of it is made of
+letters.
+
+1. The shape
+   The swan is a cloud of about 30,000 points stored in swan_shape.npz:
+   a side view traced as a flat outline, then puffed into a rounded
+   body (the distance from the outline sets the depth, and a mirrored
+   copy makes the far side). Each point keeps a surface normal and a
+   brightness, so the body is lit like a solid and reads as one when it
+   turns.
+
+2. The neck
+   A centre line runs from the breast, up the neck, over the crown and
+   down to the beak tip. It is split into bones, and each neck point
+   remembers which bone it belongs to and where it sits beside it. Each
+   frame the bones are rotated a little (stretch, dip, sway) and the
+   points follow, so the neck bends smoothly while the head stays one
+   rigid piece. A weight blends neck points into the body so there is
+   no seam.
+
+3. The motion
+   Each swan follows a path of (time, x, z) waypoints with a smooth
+   monotone curve between them. The heading comes from the direction of
+   travel, so the body turns with the path and is seen from the side,
+   the back or the front as it goes. Small slow waves on top (neck,
+   head turn, wing lift, body sway, bob) keep it alive.
+
+4. The water
+   A grid of points on the water plane carries three overlapping ripple
+   waves, a brighter patch around each swan, a V wake behind it, rings
+   pushed out by the breast every few seconds, and one ring where the
+   beaks meet. The swan's reflection is its own points flipped below the
+   waterline and shifted by the ripples. Sun flecks twinkle on the
+   surface.
+
+5. Letters
+   Every point is projected onto a grid of letters. Far points are drawn
+   first and near ones paint over them. Brighter cells get denser
+   letters (from 1 i l up to 8 B $ #), the outline gets / | \ - _ in the
+   direction it runs, and the water uses ~ - _ by brightness.
+
+Things you can try (for yourself)
+   SWANS       the paths and motion curves of the two swans
+   STRAIGHT, DIP   how the neck bends
+   TAG_COLOR   the colours
+   CELL        letter size
+   LOOP        length of the loop

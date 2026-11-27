@@ -10,6 +10,7 @@ what each piece is, why it was made, and which techniques shaped it.
 
 | | Work | Year | Source code |
 |---|---|---|---|
+| ![](SWAN/images/02_heart.png) | [SWAN](SWAN/) | 2026 | free, in this repository |
 | ![](BUTTERFLY/images/03_flight.png) | [BUTTERFLY](BUTTERFLY/) | 2026 | free, in this repository |
 | ![](GOLDFISH/images/02_hello.png) | [GOLDFISH](GOLDFISH/) | 2026 | free, in this repository |
 | ![](GNOME/images/02_hello.png) | [GNOME](GNOME/) | 2026 | free, in this repository |
