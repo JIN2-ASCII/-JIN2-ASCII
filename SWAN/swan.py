@@ -19,21 +19,14 @@ import numpy as np
 from scipy.interpolate import PchipInterpolator
 
 os.environ.setdefault("PYGAME_HIDE_SUPPORT_PROMPT", "1")
-import pygame  # noqa: E402
-
+import pygame
 
 TAU = np.pi * 2
 
-
-POOLS = ["1il!;:", "rtfjcvxz=+", "aeoun0{}[]<>", "08B$#&%Q"]   # dark -> bright
-
-
+# letters by density, dark -> bright; FILL[level, k] cycles through one pool
+POOLS = ["1il!;:", "rtfjcvxz=+", "aeoun0{}[]<>", "08B$#&%Q"]
 CHARS = " .,:~+*^01|/\\-_#()x" + "".join(POOLS)
-
-
 AT = {c: i for i, c in enumerate(CHARS)}
-
-
 FILL = np.array([[AT[p[k % len(p)]] for k in range(12)] for p in POOLS])
 
 
@@ -68,10 +61,9 @@ def outline_letter(gx, gy):
     return np.where((ax + ay) == 0, AT["+"], c)
 
 
-def raster(t, cols, rows, aspect, P, shade, T, K, look, *, F=2.9, gap=0.035, glints=(),
-           edge_min=0.85, inner=None, refl_tag=None, particle=None):
+def raster(t, cols, rows, aspect, P, shade, T, K, look, inner, particle, *, F=2.9, gap=0.035, edge_min=0.0):
     """project points into a letter grid.
-    K >= 0: solid part id, K < 0: particle. glints: tags drawn as '*'."""
+    K >= 0: solid part id (drawn with an outline), K < 0: particle (drawn by `particle`)."""
     x, y, z, _ = look(P)
     zz = np.maximum(z, 0.2)
     sx = (0.5 + x / zz * F * 0.5) * cols
@@ -112,11 +104,8 @@ def raster(t, cols, rows, aspect, P, shade, T, K, look, *, F=2.9, gap=0.035, gli
     h = (r * 7919 + c * 104729) % 9973
     level = np.clip((lum * 3.2).astype(int), 0, 3)
     fill = FILL[level, (h + (t * 4 + h % 11).astype(int)) % 12]
-    sparkle = body & np.isin(tag, list(glints))
     char = np.where(body, np.where(edge, outline_letter(gx, gy), fill), 0)
-    char = np.where(sparkle, AT["*"], char)
-    inner_lum = inner(lum) if inner else np.clip(0.45 + 0.55 * lum / 0.9, 0.45, 1)
-    lum = np.where(body, np.where(edge, np.maximum(edge_min, lum), inner_lum), 0)
+    lum = np.where(body, np.where(edge, np.maximum(edge_min, lum), inner(lum)), 0)
 
     # particles go only where nothing solid is in front
     fx = ok & (K < 0) & (shade > 0.02)
@@ -124,15 +113,8 @@ def raster(t, cols, rows, aspect, P, shade, T, K, look, *, F=2.9, gap=0.035, gli
     fi, fj, fs, ft = (a[fx][~hidden] for a in (iy, ix, shade, T))
     keep = ~body[fi, fj]
     fi, fj, fs, ft = fi[keep], fj[keep], fs[keep], ft[keep]
-    if particle:
-        letter = particle(ft, fs, fi, fj)
-    else:
-        refl = FILL[np.clip((fs * 6).astype(int), 0, 1), (fi * 31 + fj) % 12]
-        mote = np.where(fs > 0.7, AT["*"], np.where(fs > 0.35, AT["+"], AT["."]))
-        letter = np.where(ft == refl_tag, refl, mote)
-    char[fi, fj], lum[fi, fj], tag[fi, fj] = letter, np.clip(fs, 0, 1), ft
-    return SimpleNamespace(char=char, lum=lum, tag=tag, body=body, sparkle=sparkle, h=h,
-                           rows=rows, cols=cols, fi=fi, fj=fj, fs=fs, ft=ft, count=int(body.sum()))
+    char[fi, fj], lum[fi, fj], tag[fi, fj] = particle(ft, fs, fi, fj), np.clip(fs, 0, 1), ft
+    return SimpleNamespace(char=char, lum=lum, tag=tag, count=int(body.sum()))
 
 
 CELL = (9, 14, 15)                                                  # letter cell: width px, height px, font px
@@ -263,7 +245,8 @@ def position(t, c):
     return x, z, c["yaw"](t, yaw)
 
 
-def place(t, c, k):
+def place(t, c):
+    """one swan in world space: points, normals, beak tip and its (x, z) on the water"""
     x, z, yaw = position(t, c)
     sway = 0.12 * np.sin(t * 0.9 + c["phase"]) + 0.1 * np.sin(t * 2.3 + c["phase"]) * NUZZLE(t) + c["sway2"](t)
     P, n, tip = swan(t, c["stretch"](t), c["down"](t) + HEART(t), c["look"](t), sway, c["wing"](t))
@@ -278,7 +261,7 @@ def frame(t, cols, rows, aspect):
     parts, lums, tags, kids = [], [], [], []
     tips = []
     for k, c in enumerate(SWANS):
-        P, n, tip, sx, sz = place(t, c, k)
+        P, n, tip, sx, sz = place(t, c)
         tips.append(tip)
         L = (0.8 + 0.2 * S["tex"]) * shade(n)
         keep = P[:, 1] > -0.005                                                 # nothing below the waterline
@@ -331,7 +314,7 @@ def frame(t, cols, rows, aspect):
         return np.where(ft == WATER, water, np.where(ft == REFL, refl, np.where(fs > 0.6, AT["*"], AT["+"])))
 
     cam = camera(eye=(0, 1.0, 8.2 - 0.4 * smooth(t / LOOP)), target=(0, 0.5, 0))   # drifts slowly closer
-    g = raster(t, cols, rows, aspect, P, L, T, K, cam, edge_min=0.0, inner=lambda l: np.clip(0.5 + 0.5 * l, 0, 1), particle=letters)
+    g = raster(t, cols, rows, aspect, P, L, T, K, cam, lambda l: np.clip(0.5 + 0.5 * l, 0, 1), letters)
     return g.char, g.lum, g.tag, {"swans": len(SWANS)}, g.count
 
 
@@ -494,7 +477,7 @@ def main():
         screen.blit(glow_layer(blur(art, 4, 5), 0.75 * GLOW), (0, 0), special_flags=pygame.BLEND_ADD)
         screen.blit(glow_layer(blur(art, 8, 22), 0.45 * GLOW), (0, 0), special_flags=pygame.BLEND_ADD)
         y = H - 70
-        screen.blit(small.render(SIGN, True, (120, 112, 128)), (64, y - 26))
+        screen.blit(small.render(SIGN, True, DIM), (64, y - 26))
         screen.blit(small.render(HUD(info), True, DIM), (64, y))
         screen.blit(small.render(f"letters {count:05,d}", True, DIM), (64, y + 26))
         tt = small.render(f"{'●' if int(t * 2) % 2 == 0 else ' '} t {t:05.2f}s", True, PINK)
