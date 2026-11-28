@@ -1,0 +1,53 @@
+HOW IT WORKS - Watching
+JIN2 · @jin_22ee
+
+The whole artwork is one Python file. An eye in the dark opens at once,
+looks around, and then more eyes appear until they all look at you.
+Every part of it is made of letters.
+
+1. One eye is one small description
+   Each eye has a position, a size, a lid shape and a list of times:
+   when it opens, when it blinks, where the pupil looks and how much the
+   whole eye grows. The picture of the eye is worked out from that list
+   for every frame.
+
+2. The lid
+   The eye is an almond cut out of the letter grid. Each corner has its
+   own sharpness, the upper and lower lid have their own curve, and the
+   outer corner can lean up or down. Eleven shapes are ready, so no two
+   eyes look the same. A random grain on the edge keeps the lid rough.
+
+3. Eyeball, iris and lashes
+   The white of the eye is grey and gets darker toward the lids, with
+   grain. The iris is black with a grey rim that is brighter along the
+   bottom, and two small highlights sit on it. A few + signs outside the
+   lids are the lashes. A shut eye is only a dashed line and some lashes.
+
+4. Looking around
+   The pupil never glides. It jumps from one spot to the next at random
+   short intervals, and a tiny tremor keeps the eye alive. Blinks take
+   six frames and close in quarter steps.
+
+5. Cuts
+   The film is a list of short shots that overlap in time. Before a shot
+   is placed, the code checks that the new eye does not touch any eye
+   that is on screen at the same time, and that it is far from the last
+   one. If there is no room, the eye comes in smaller.
+
+6. Many eyes
+   The last scene places thirteen sizes of eye on the screen without any
+   overlap, with room left for them to grow. They appear one by one,
+   look around, and at the end all of them look straight at you, grow in
+   two jolts and stop blinking.
+
+7. Glitch
+   After the first cut, a few frames now and then flicker or have rows
+   that slip sideways. It stays off for half a second after every cut so
+   a new eye always opens cleanly.
+
+Things you can try (for yourself)
+   SHAPES             add your own eye shape
+   SIZES              how many eyes there are in the end and how big
+   GROW               how much they swell when they find you
+   TAG_COLOR          the colours
+   shot(...)          start, end, position, size, shape of one eye

@@ -26,6 +26,7 @@ what each piece is, why it was made, and which techniques shaped it.
 | ![](BIRTHDAY-CAKE/images/03_happy_birthday.png) | [HAPPY BIRTHDAY (Birthday Cake)](BIRTHDAY-CAKE/) | 2026 | free, in this repository |
 | ![](ROSE/images/03_bloom.png) | [IN BLOOM (Rose)](ROSE/) | 2026 | free, in this repository |
 | ![](DIAMOND-RING/images/02_finished.png) | [WILL YOU (Diamond Ring)](DIAMOND-RING/) | 2026 | free, in this repository |
+| ![](WATCHING/images/03_found_you.png) | [WATCHING](WATCHING/) | 2026 | free, in this repository |
 
 New works are added over time.
 
